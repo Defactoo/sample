@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__.'/helper.php';
-
 function get_db_config()
 {
 
