@@ -31,7 +31,7 @@ class SessionController extends Controller
                return redirect()->intended(route('users.show', [Auth::user()]));
            }else {
                Auth::logout();
-               session()->flash('warning', '您的账号未激活，请检查邮箱中的激活邮件进行激活')；
+               session()->flash('warning', '您的账号未激活，请检查邮箱中的激活邮件进行激活');
            }
        } else {
            session()->flash('danger', '很抱歉，您的邮箱和密码不匹配');
